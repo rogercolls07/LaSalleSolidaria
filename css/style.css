@@ -1,0 +1,8 @@
+/* Variables de color */
+:root {
+    --primary-color: #003366; /* Azul La Salle */
+    --accent-color: #ffcc00;  /* Amarillo institucional */
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+}
+
