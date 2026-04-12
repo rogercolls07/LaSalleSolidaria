@@ -1,9 +1,11 @@
-/* Variables de color */
+/* 1. Variables Globales (Colores La Salle y Tipografía) */
 :root {
-    --primary-color: #003366; /* Azul La Salle */
-    --accent-color: #ffcc00;  /* Amarillo institucional */
-    --text-color: #333;
-    --bg-color: #f4f4f4;
+    --azul-lasalle: #00468b;
+    --oro-lasalle: #ffc20e;
+    --blanco: #ffffff;
+    --gris-claro: #f4f7f6;
+    --texto: #333333;
+    --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
