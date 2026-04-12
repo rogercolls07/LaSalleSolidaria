@@ -14,7 +14,7 @@ body {
     background-color: var(--gris-claro);
 }
 
-/* 3. Navegación (Responsive) */
+
 header {
     background-color: var(--azul-lasalle);
     padding: 1rem 0;
@@ -52,4 +52,74 @@ nav ul li a {
 
 nav ul li a:hover, nav ul li a.active {
     color: var(--oro-lasalle);
+}
+
+.banner {
+    background: linear-gradient(rgba(0, 70, 139, 0.8), rgba(0, 70, 139, 0.8)), 
+                url('https://www.lasalle.es/images/cabecera-generica.jpg') center/cover;
+    color: var(--blanco);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    border-bottom: 4px solid var(--oro-lasalle);
+}
+
+.contenido-principal {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: var(--blanco);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.contenido-principal h2 {
+    color: var(--azul-lasalle);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.contenido-principal h3 {
+    color: var(--azul-lasalle);
+    margin: 2rem 0 1rem;
+}
+
+.contenido-principal p {
+    margin-bottom: 1.2rem;
+    text-align: justify;
+}
+
+.boton-primario {
+    display: inline-block;
+    background-color: var(--oro-lasalle);
+    color: var(--azul-lasalle);
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.boton-primario:hover {
+    transform: scale(1.05);
+    background-color: #e5af0d;
+}
+
+footer {
+    background-color: #222;
+    color: var(--blanco);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
 }
