@@ -123,3 +123,32 @@ footer {
     padding: 2rem 0;
     margin-top: 4rem;
 }
+
+/* MEDIA QUERIES (Mobile First / Responsive) */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .banner {
+        height: 50vh;
+    }
+
+    .contenido-principal {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+}
