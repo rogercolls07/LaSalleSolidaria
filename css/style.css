@@ -54,6 +54,25 @@ nav ul li a:hover, nav ul li a.active {
     color: var(--oro-lasalle);
 }
 
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre el logo y el texto */
+}
+
+.logo-img {
+    height: 45px; /* Altura controlada para que encaje en el header */
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-text {
+    color: #323b64;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
 .banner {
     background: linear-gradient(rgba(0, 70, 139, 0.8), rgba(0, 70, 139, 0.8)), 
                 url('https://www.lasalle.es/images/cabecera-generica.jpg') center/cover;
@@ -129,26 +148,25 @@ footer {
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
+        gap: 15px; /* Añade espacio entre la marca y la lista en móviles */
+    }
+
+    .brand {
+        flex-direction: column; /* Apila el logo y el texto en pantallas muy pequeñas si lo deseas */
+        text-align: center;
+    }
+    
+    .logo-img {
+        height: 40px; /* Logo ligeramente más pequeño en móviles */
     }
 
     nav ul {
-        margin-top: 15px;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     nav ul li {
-        margin: 0 10px;
-    }
-
-    .banner h1 {
-        font-size: 2rem;
-    }
-
-    .banner {
-        height: 50vh;
-    }
-
-    .contenido-principal {
-        margin: 1rem;
-        padding: 1.5rem;
+        margin: 5px 10px;
     }
 }
