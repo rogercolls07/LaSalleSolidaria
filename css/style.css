@@ -67,7 +67,7 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .logo-text {
-    color: #323b64;
+    color: var(--blanco);
     font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 1px;
