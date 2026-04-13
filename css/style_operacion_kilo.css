@@ -1,0 +1,61 @@
+
+.seccion-ancha {
+    max-width: 1100px; 
+    margin: 3rem auto;
+    padding: 0 20px;
+}
+
+.contenedor-grid-desplegables {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: flex-start;
+}
+
+.desplegable {
+    flex: 1 1 calc(33.333% - 20px); 
+    min-width: 280px; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: fit-content;
+}
+
+.desplegable-header {
+    background-color: #00468b; 
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    transition: background 0.3s ease;
+}
+
+.desplegable-header:hover {
+    background-color: #003366;
+}
+
+.desplegable-contenido {
+    padding: 15px;
+    background: white;
+    display: none; 
+    border-top: 1px solid #eee;
+}
+
+
+.desplegable:focus-within .desplegable-contenido {
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .desplegable {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .desplegable {
+        flex: 1 1 100%;
+    }
+}
